@@ -17,11 +17,15 @@ const Home = () => {
     }
 
     const [ isModalOpen, setIsModalOpen ] = useState(false)
+    const [ currentItem, setCurrentItem ] = useState({})
 
-    const toggleModal = (e, item) => {
+    const toggleModal = (e) => {
         setIsModalOpen(!isModalOpen)
-        const modalHeadline = item.headline;
-        console.log(modalHeadline)
+    }
+
+    const toggleItem = (e, item) => {
+        setIsModalOpen(!isModalOpen)
+        setCurrentItem(item)
     }
 
     return (
@@ -31,8 +35,8 @@ const Home = () => {
             <Hero></Hero>
             <About {...aboutOne}></About>
             <LogoBar></LogoBar>
-            <Modal isModalOpen={isModalOpen} toggle={toggleModal}></Modal>
-            <Portfolio toggle={toggleModal}></Portfolio>
+            <Modal isModalOpen={isModalOpen} toggle={toggleModal} item={currentItem}></Modal>
+            <Portfolio toggle={toggleItem}></Portfolio>
             <Footer></Footer>
         </>
     )

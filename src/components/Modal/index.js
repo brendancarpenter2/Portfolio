@@ -1,7 +1,7 @@
 import React from 'react'
 import { ModalContainer, ModalOverlay, ModalInnerContainer, ModalImage, ModalContent, ModalHeadline, ModalSubheadline, ModalCopy, Icon, CloseIcon } from './ModalElements'
 
-const Modal = ( {isModalOpen, toggle, src, modalHeadline, subheadline, copy} ) => {
+const Modal = ( {isModalOpen, toggle, item}) => {
     return (
         <ModalContainer isModalOpen={isModalOpen}>
             <ModalOverlay onClick={toggle}></ModalOverlay>
@@ -9,11 +9,11 @@ const Modal = ( {isModalOpen, toggle, src, modalHeadline, subheadline, copy} ) =
                 <Icon onClick={toggle}>
                     <CloseIcon></CloseIcon>
                 </Icon>
-                <ModalImage src={src}></ModalImage>
+                <ModalImage src={item.src}></ModalImage>
                 <ModalContent>
-                    <ModalHeadline>{modalHeadline}</ModalHeadline>
-                    <ModalSubheadline>{subheadline}</ModalSubheadline>
-                    <ModalCopy>{copy}</ModalCopy>
+                    <ModalHeadline>{item.headline}</ModalHeadline>
+                    <ModalSubheadline>{item.subheadline}</ModalSubheadline>
+                    <ModalCopy>{item.copy}</ModalCopy>
                 </ModalContent>
             </ModalInnerContainer>
         </ModalContainer>
