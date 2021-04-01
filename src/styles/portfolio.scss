@@ -1,0 +1,19 @@
+.portfolio {
+    &__card__container {
+        &:hover {
+            .portfolio__image {
+                &__overlay {
+                    opacity: 0.4;
+                    transition: all .4s ease-in-out;
+                }
+            }
+
+            .portfolio__content {
+                top: 0;
+                opacity: 1;
+                transition: all .3s ease-in-out;
+                transition-delay: 0.1s;
+            }
+        }
+    }
+}
