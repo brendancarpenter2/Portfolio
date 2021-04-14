@@ -21,20 +21,17 @@ export const Gallery = () => {
     return (
         <>
             <Swiper id="aboutMe"
-      spaceBetween={0}
-      slidesPerView={1}
-      navigation
-      loop={true}
-      pagination={{ clickable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
-      // onReachEnd={() => console.log('slide end')}
-    >
-      <SwiperSlide><img {...slideOne} alt={slideOne.alt}/></SwiperSlide>
-      <SwiperSlide><img {...slideTwo} alt={slideTwo.alt} /></SwiperSlide>
-      <SwiperSlide><img {...slideThree} alt={slideThree.alt} /></SwiperSlide>
-      <SwiperSlide><img {...slideFour} alt={slideFour.alt} /></SwiperSlide>
-    </Swiper>
+              spaceBetween={0}
+              slidesPerView={1}
+              navigation
+              loop={true}
+              pagination={{ clickable: true }}
+            >
+              <SwiperSlide><img {...slideOne} alt={slideOne.alt}/></SwiperSlide>
+              <SwiperSlide><img {...slideTwo} alt={slideTwo.alt} /></SwiperSlide>
+              <SwiperSlide><img {...slideThree} alt={slideThree.alt} /></SwiperSlide>
+              <SwiperSlide><img {...slideFour} alt={slideFour.alt} /></SwiperSlide>
+            </Swiper>
         </>
     )
 }

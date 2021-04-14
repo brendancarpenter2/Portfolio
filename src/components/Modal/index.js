@@ -1,5 +1,6 @@
 import React from 'react'
-import { ModalContainer, ModalOverlay, ModalInnerContainer, ModalImage, ModalContent, ModalHeadline, ModalSubheadline, ModalCopy, Icon, CloseIcon } from './ModalElements'
+import { ModalGallery } from '../ModalGallery/index'
+import { ModalContainer, ModalOverlay, ModalInnerContainer, ModalGalleryContainer, ModalContent, ModalHeadline, ModalSubheadline, ModalDivider, ModalCopy, Icon, CloseIcon } from './ModalElements'
 
 const Modal = ( {isModalOpen, toggle, item}) => {
     return (
@@ -9,11 +10,14 @@ const Modal = ( {isModalOpen, toggle, item}) => {
                 <Icon onClick={toggle}>
                     <CloseIcon></CloseIcon>
                 </Icon>
-                <ModalImage src={item.src}></ModalImage>
+                <ModalGalleryContainer>
+                    <ModalGallery item={item}></ModalGallery>
+                </ModalGalleryContainer>
                 <ModalContent>
                     <ModalHeadline>{item.headline}</ModalHeadline>
                     <ModalSubheadline>{item.subheadline}</ModalSubheadline>
-                    <ModalCopy>{item.copy}</ModalCopy>
+                    <ModalDivider></ModalDivider>
+                    <ModalCopy>{item.description}</ModalCopy>
                 </ModalContent>
             </ModalInnerContainer>
         </ModalContainer>

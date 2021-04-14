@@ -52,7 +52,7 @@ const Portfolio = ( {toggle} ) => {
 
                                     <PortfolioCardContainer key={item.id} className="portfolio__card__container">
                                         <PortfolioCard className="portfolio__card">
-                                            <PortfolioImage src={item.src} className="portfolio__image"></PortfolioImage>
+                                            <PortfolioImage src={item.src[0]} className="portfolio__image"></PortfolioImage>
                                             <PortfolioImageOverlay className="portfolio__image__overlay"></PortfolioImageOverlay>
                                             <PortfolioContent className="portfolio__content">
                                                 <PortfolioHeadline className="portfolio__headline">{item.headline}</PortfolioHeadline>

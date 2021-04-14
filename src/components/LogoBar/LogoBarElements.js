@@ -20,6 +20,10 @@ export const LogoBarContainer = styled.div`
         position: absolute;
         width:200px;
         z-index: 2;
+
+        @media screen and (max-width: 450px) {
+            width: 80px;
+        }
     }
 
     &:after {
@@ -32,6 +36,10 @@ export const LogoBarContainer = styled.div`
         position: absolute;
         width:200px;
         z-index: 2;
+
+        @media screen and (max-width: 450px) {
+            width: 80px;
+        }
     }
 `;
 

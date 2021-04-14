@@ -17,7 +17,7 @@ export const PortfolioWrapper = styled.div`
     z-index: 1;
     height: 100%;
     width: 100%;
-    padding: 100px 0 150px;
+    padding: 100px 0;
     max-width: 1250px;
     margin: auto;
     justify-content: center;
@@ -40,6 +40,11 @@ export const PortfolioFilterRow = styled.div`
     flex-direction: row;
     justify-content: center;
     margin: 0 0 50px;
+
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const PortfolioFilterItem = styled.div`
@@ -56,10 +61,6 @@ export const PortfolioFilter = styled.a`
     font-weight: 500;
     cursor: pointer;
     transition: 0.4s all ease;
-
-    /* &.active {
-        border-bottom: 1px solid #091d22;
-    } */
 
     &:hover {
         color: #5ADEFF;
@@ -95,20 +96,22 @@ export const PortfolioGallery = styled.div`
 
     @media screen and (max-width: 1300px) {
         max-width: 950px;
-        /* grid-template-rows: repeat(auto-fill, 250px);
-        grid-template-columns: repeat(auto-fill, 250px); */
     }
 
     @media screen and (max-width: 1000px) {
         max-width: 700px;
-        /* grid-template-rows: repeat(auto-fill, 200px);
-        grid-template-columns: repeat(auto-fill, 200px); */
     }
 
     @media screen and (max-width: 750px) {
-        max-width: 400px;
-        /* grid-template-rows: repeat(auto-fill, 150px);
-        grid-template-columns: repeat(auto-fill, 150px); */
+        max-width: 450px;
+        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 200px);
+    }
+
+    @media screen and (max-width: 450px) {
+        max-width: 350px;
+        grid-template-rows: repeat(auto-fill, 150px);
+        grid-template-columns: repeat(auto-fill, 150px);
     }
 `;
 
