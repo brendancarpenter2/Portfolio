@@ -1,9 +1,9 @@
 export const portfolio = [
     {
+        key: 1,
         id: 'PortfolioOne',
         category: ['all', 'web', 'banner'],
         src: [ require('../../images/slide_1.png').default, require('../../images/slide_2.png').default ],
-        srcTemp: require('../../images/slide_1.png').default,
         headline: 'Headline1',
         subheadline: 'React | SCSS | HTML',
         copy: 'Copy1',
@@ -12,6 +12,7 @@ export const portfolio = [
     },
 
     {
+        key: 2,
         id: 'PortfolioTwo',
         category: ['all', 'graphic', 'email'],
         src: [ require('../../images/slide_3.png').default, require('../../images/slide_2.png').default, require('../../images/slide_1.png').default ],
@@ -23,6 +24,7 @@ export const portfolio = [
     },
 
     {
+        key: 3,
         id: 'PortfolioThree',
         category: ['all', 'graphic'],
         src: [ require('../../images/slide_1.png').default ],
@@ -34,6 +36,7 @@ export const portfolio = [
     },
 
     {
+        key: 4,
         id: 'PortfolioFour',
         category: ['all', 'web', 'banner'],
         src: [ require('../../images/slide_3.png').default, require('../../images/slide_2.png').default, require('../../images/slide_1.png').default ],
@@ -45,6 +48,7 @@ export const portfolio = [
     },
 
     {
+        key: 5,
         id: 'PortfolioFive',
         category: ['all', 'web'],
         src: [ require('../../images/slide_1.png').default, require('../../images/slide_2.png').default ],
@@ -56,6 +60,7 @@ export const portfolio = [
     },
 
     {
+        key: 6,
         id: 'PortfolioSix',
         category: ['all', 'graphic', 'web', 'banner'],
         src: [ require('../../images/slide_3.png').default ],
@@ -67,6 +72,7 @@ export const portfolio = [
     },
 
     {
+        key: 7,
         id: 'PortfolioSeven',
         category: ['all', 'web', 'banner'],
         src: [ require('../../images/slide_1.png').default, require('../../images/slide_2.png').default ],
@@ -78,6 +84,7 @@ export const portfolio = [
     },
 
     {
+        key: 8,
         id: 'PortfolioEight',
         category: ['all', 'email'],
         src: [ require('../../images/slide_3.png').default, require('../../images/slide_2.png').default, require('../../images/slide_1.png').default ],

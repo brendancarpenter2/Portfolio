@@ -20,6 +20,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export const ModalGallery = ({item}) => {
     const [modalItem, setModalItem] = useState([])
     const [modalItemAlt, setModalItemAlt] = useState([])
+    const [modalItemKey, setModalItemKey] = useState([])
 
     useEffect(() => {
         setModalItem(item.src)
@@ -29,6 +30,10 @@ export const ModalGallery = ({item}) => {
         setModalItemAlt(item.alt)
     }, [item.alt])
 
+    useEffect(() => {
+        setModalItemKey(item.key)
+    }, [item.key])
+
   return (
     <>
       <Swiper id="modalGallery"
@@ -37,19 +42,15 @@ export const ModalGallery = ({item}) => {
           navigation
           loop={true}
           pagination={{ clickable: true }}
+          key={modalItemKey}
         >
-
         {modalItem ? (
             modalItem.map(modalItemSource => {
                 console.log(modalItemSource);
                 console.log(modalItemAlt);
-
-                <SwiperSlide><img width="100%" height="100%" src={modalItemSource} alt={modalItemAlt} style={{display: 'block'}} /></SwiperSlide>
-
+                return <SwiperSlide key={modalItemSource}><img width="100%" height="100%" src={modalItemSource} alt={modalItemAlt} style={{display: 'block'}} /></SwiperSlide>
             })
         ) : []}
-        
-
         </Swiper>
     </>
   )
