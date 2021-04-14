@@ -40,11 +40,11 @@ export const ModalGallery = ({item}) => {
         >
 
         {modalItem ? (
-            modalItem.map(item => {
-                console.log(item);
+            modalItem.map(modalItemSource => {
+                console.log(modalItemSource);
                 console.log(modalItemAlt);
 
-                <SwiperSlide><img width="100%" height="100%" src={item} alt={modalItemAlt} style={{display: 'block'}} /></SwiperSlide>
+                <SwiperSlide><img width="100%" height="100%" src={modalItemSource} alt={modalItemAlt} style={{display: 'block'}} /></SwiperSlide>
 
             })
         ) : []}
