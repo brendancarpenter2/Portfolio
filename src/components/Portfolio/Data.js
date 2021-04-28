@@ -3,12 +3,15 @@ export const portfolio = [
         key: 1,
         id: 'PortfolioOne',
         category: ['all', 'web', 'banner'],
-        src: [ require('../../images/slide_1.png').default, require('../../images/slide_2.png').default ],
+        src: [ require('../../images/slide_1.png').default ],
+        banner: '../../../banners/santamonica/index.html',
         headline: 'Headline1',
         subheadline: 'React | SCSS | HTML',
         copy: 'Copy1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'banner',
+        title: 'Banner Title',
     },
 
     {
@@ -21,6 +24,7 @@ export const portfolio = [
         copy: 'Copy2',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'email',
     },
 
     {
@@ -33,6 +37,8 @@ export const portfolio = [
         copy: 'Copy3',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'email',
+        title: 'Banner Title',
     },
 
     {
@@ -45,6 +51,8 @@ export const portfolio = [
         copy: 'Copy4',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'banner',
+        title: 'Banner Title',
     },
 
     {
@@ -57,6 +65,8 @@ export const portfolio = [
         copy: 'Copy5',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'banner',
+        title: 'Banner Title',
     },
 
     {
@@ -69,6 +79,7 @@ export const portfolio = [
         copy: 'Copy6',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'email',
     },
 
     {
@@ -81,6 +92,8 @@ export const portfolio = [
         copy: 'Copy7',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'banner',
+        title: 'Banner Title',
     },
 
     {
@@ -93,6 +106,7 @@ export const portfolio = [
         copy: 'Copy8',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         alt: 'Alt Text of Project',
+        type: 'email',
     },
 
 ];
