@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+// import { SMTBanner } from '../SMTBanner/index'
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
@@ -74,14 +75,15 @@ export const ModalGallery = ({item}) => {
             )
         }
         //if banner, display iframe Gallery
-        //add filter:drop-shadow(0 0 10px rgba(0,0,0,0.4)) and margin: 20px on desktop view
         if (modalItemType === "banner") {
             return (
                 <>
                     {modalItem ? (
                         modalItem.map(modalItemSource => {
                             return (
-                                <iframe width="300" height="250" key={modalItemKey + modalItemBanner} src={modalItemBanner} alt={modalItemAlt} title={modalItemTitle} style={{border: 'none', display: 'block'}}></iframe>
+                                <div>
+                                    <iframe width="300" height="250" key={modalItemKey + modalItemBanner} src={modalItemBanner} alt={modalItemAlt} title={modalItemTitle} style={{border: 'none', display: 'block'}}></iframe>
+                                </div>
                             )
                         })
                     ) : []}

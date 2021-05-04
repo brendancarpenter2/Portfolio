@@ -40,7 +40,7 @@ export const ModalInnerContainer = styled.div`
     }
 
     @media screen and (max-width: 400px) {
-        max-width: 250px;
+        width: 320px;
     }
 `;
 
@@ -68,6 +68,15 @@ export const ModalGalleryContainer = styled.div`
     max-width: 400px;
     /* width: 100%; */
     height: 100%;
+
+    iframe {
+        margin: 20px;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+
+        @media screen and (max-width: 900px) {
+            margin: 80px 0 0;
+        }
+    }
 `;
 
 export const ModalImage = styled.img`
