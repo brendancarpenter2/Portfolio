@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const FooterContainer = styled.footer`
-    background-color: #1B252F;
+    background-color: var(--dark);
 `;
 
 export const FooterRow = styled.div`
@@ -29,7 +29,7 @@ export const SocialMediaContainer = styled.div`
 
 
 export const SocialLogo = styled(LinkScroll)`
-    color: #ffffff;
+    color: var(--light);
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -41,7 +41,7 @@ export const SocialLogo = styled(LinkScroll)`
 `;
 
 export const WebRights = styled.small`
-    color: #ffffff;
+    color: var(--light);
     margin-bottom: 16px;
 `;
 

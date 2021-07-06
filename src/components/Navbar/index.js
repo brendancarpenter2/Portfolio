@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import { Nav, NavbarContainer, NavMenuContainer, NavSocialContainer, NavMenu, NavItem, NavLogo, NavSocial, NavSocialItem, NavLinks, NavSocialLinks, MobileIcon } from './NavbarElements'
+import { Nav, NavbarContainer, NavMenuContainer, NavSocialContainer, NavMenu, NavItem, NavLogo, NavLogoImage, NavSocial, NavSocialItem, NavLinks, NavSocialLinks, MobileIcon } from './NavbarElements'
 import { FaBars, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import logo from '../../images/logo.svg'
 
 const Navbar = ( {toggle} ) => {
 
@@ -44,8 +45,8 @@ const Navbar = ( {toggle} ) => {
                             </NavItem>
                         </NavMenu>
                     </NavMenuContainer>
-                    <NavLogo to="/" onClick={toggleHome} scrollNav={scrollNav}>
-                        Logo
+                    <NavLogo>
+                        <NavLogoImage to="/" src={logo} fill="black" onClick={toggleHome} scrollNav={scrollNav}></NavLogoImage>
                     </NavLogo>
                     <NavSocialContainer>
                         <NavSocial scrollNav={scrollNav}>

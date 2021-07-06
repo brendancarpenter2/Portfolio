@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import '../../styles/_variables.scss'
 
 export const PortfolioContainer = styled.div`
-    color: #091D22;
-    background: ${({darkSection}) => (darkSection ? '#091D22' : '#F8F8F8')};
+    color: var(--dark);
+    background: ${({darkSection}) => (darkSection ? 'var(--dark)' : 'var(--light)')};
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -52,7 +53,7 @@ export const PortfolioFilterItem = styled.div`
 `;
 
 export const PortfolioFilter = styled.a`
-    color: #091D22;
+    color: var(--dark);
     font-size: 1rem;
     margin: 0 25px;
     padding: 0 30px;
@@ -63,8 +64,8 @@ export const PortfolioFilter = styled.a`
     transition: 0.4s all ease;
 
     &:hover {
-        color: #5ADEFF;
-        border-color: #5ADEFF;
+        color: var(--primary);
+        border-color: var(--primary);
     }
 
     @media screen and (max-width: 900px) {
@@ -126,7 +127,7 @@ export const PortfolioCard = styled.a`
 `;
 
 export const PortfolioImageOverlay = styled.div`
-    background: #000000;
+    background: var(--black);
     position: absolute;
     top: 0;
     width: 100%;
@@ -157,14 +158,14 @@ export const PortfolioContent = styled.div`
 export const PortfolioHeadline = styled.h1`
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #f8f8f8;
+    color: var(--light);
     font-weight: 700;
 `;
 
 export const PortfolioCopy = styled.p`
     text-transform: uppercase;
     font-size: 1.1rem;
-    color: #f8f8f8;
+    color: var(--light);
     font-weight: 500;
     margin-top: 8px;
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import '../../styles/_variables.scss'
 
 export const HeroContainer = styled.div`
     display: flex;
@@ -68,7 +69,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #F8F8F8;
+    color: var(--light);
     font-size: 3.5rem;
     letter-spacing: 2px;
     text-align: left;
@@ -87,7 +88,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroH1Color = styled.span`
-    color: #091D22;
+    color: var(--dark);
     font-size: 3.5rem;
     letter-spacing: 2px;
     text-align: left;

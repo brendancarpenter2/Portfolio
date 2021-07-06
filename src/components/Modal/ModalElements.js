@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
+import '../../styles/_variables.scss'
 
 export const ModalContainer = styled.aside`
     position: fixed;
@@ -18,7 +19,7 @@ export const ModalContainer = styled.aside`
 `;
 
 export const ModalOverlay = styled.div`
-    background: #091D22;
+    background: var(--dark);
     width: 100%;
     height: 100%;
     background: rgba(9, 29, 34, 0.5);
@@ -28,7 +29,7 @@ export const ModalInnerContainer = styled.div`
     position: absolute;
     max-width: 800px;
     width: 800px;
-    background-color: #f8f8f8;
+    background-color: var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +46,10 @@ export const ModalInnerContainer = styled.div`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-    color: #091D22;
+    color: var(--dark);
 
     @media screen and (max-width: 900px) {
-        color: #f8f8f8;
+        color: var(--light);
     }
 `;
 
@@ -94,7 +95,7 @@ export const ModalHeadline = styled.h1`
     letter-spacing: 1px;
     padding: 0 0 5px;
     font-weight: 600;
-    color: #091D22;
+    color: var(--dark);
 `;
 
 export const ModalSubheadline = styled.h2`
@@ -102,18 +103,18 @@ export const ModalSubheadline = styled.h2`
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #5ADEFF;
+    color: var(--primary);;
     padding: 0 0 10px;
 `;
 
 export const ModalDivider = styled.div`
-    background-color: #e5e4e2;
+    background-color: var(--gray);
     height: 2px;
     width: 100px;
 `;
 
 export const ModalCopy = styled.p`
-    color: #091D22;
+    color: var(--dark);
     line-height: 26px;
     padding: 10px 0 0;
 `;

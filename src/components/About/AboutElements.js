@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import '../../styles/_variables.scss'
 
 export const AboutContainer = styled.div`
-    color: #091D22;
-    background: ${({darkSection}) => (darkSection ? '#091D22' : '#F8F8F8')};
+    color: var(--dark);
+    background: ${({darkSection}) => (darkSection ? 'var(--dark)' : 'var(--light)')};
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -68,7 +69,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #5ADEFF;
+    color: var(--primary);
     font-size: 1rem;
     line-height: 1rem;
     font-weight: 700;
@@ -85,7 +86,7 @@ export const Heading = styled.h1`
     letter-spacing: 2px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({darkSection}) => (darkSection ? '#F8F8F8' : '#091D22')};
+    color: ${({darkSection}) => (darkSection ? 'var(--light)' : 'var(--dark)')};
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
@@ -98,7 +99,7 @@ export const Subtitle = styled.p`
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 32px;
-    color: ${({darkSection}) => (darkSection ? '#F8F8F8' : '#091D22')};
+    color: ${({darkSection}) => (darkSection ? 'var(--light)' : 'var(--dark)')};
 
     @media screen and (max-width: 768px) {
         max-width: 100%;

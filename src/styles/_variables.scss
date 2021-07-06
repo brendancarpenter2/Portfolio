@@ -1,15 +1,38 @@
 /* BRAND COLORS ====================================== */
-$color_primary	: 	#5ADEFF;
-$color_dark		: 	#1B252F;
-$color_light	: 	#f8f8f8;
+$primary	    : 	#5ADEFF;
+$secondary      :   #ff9f9f;
+$tertiary       :   #ff9f9f;
+$dark	     	: 	#1B252F;
+$light      	: 	#f8f8f8;
 
 /* BASE COLORS  ====================================== */
 $black          :   #000000;
 $white          :   #FFFFFF;
-$placeholder	: 	#757575;
+$gray	        : 	#e5e4e2;
 
 
 
 /* TYPOGRAPHY   ====================================== */
 $font_primary   : 'Raleway', sans-serif;
 $font_secondary : freight-text-pro, serif;
+
+:root {
+    --primary   :   #5ADEFF;
+    --secondary :   #5ADEFF;
+    --tertiary  :   #5ADEFF;
+    --dark      :   #1B252F;
+    --light     :   #f8f8f8;
+
+    --black     :   #000000;
+    --white     :   #ffffff;
+    --gray      :   #e5e4e2;
+}
+
+
+
+
+// $primary	    : 	#D1E3F0;
+// $secondary      :   #6E7E94;
+// $tertiary       :   #B8B5B6;
+// $dark		    : 	#4F5057;
+// $light	        : 	#EBEDEE;

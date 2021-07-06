@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
-import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll' 
+import '../../styles/_variables.scss'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#F8F8F8' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? 'var(--light)' : 'transparent')};
     transition: 0.4s all ease;
     height: 80px;
     margin-top: -80px;
@@ -31,7 +32,7 @@ export const MobileIcon = styled.div`
         align-items: center;
         font-size: 1.8rem;
         cursor: pointer;
-        color: ${({scrollNav}) => (scrollNav ? '#091D22' : '#091D22')};
+        color: ${({scrollNav}) => (scrollNav ? 'var(--dark)' : 'var(--dark)')};
         transition: 0.4s all ease;
     }
 `;
@@ -61,10 +62,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 40px;
+    padding: 0 1rem;
 `;
 
 export const NavLogo = styled.div`
-    color: ${({scrollNav}) => (scrollNav ? '#091D22' : '#091D22')};
+    /* color: ${({scrollNav}) => (scrollNav ? '#091D22' : '#091D22')}; */
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -75,8 +77,12 @@ export const NavLogo = styled.div`
     transition: 0.4s all ease;
 `;
 
+export const NavLogoImage = styled.img`
+    height: 60px;
+`;
+
 export const NavSocial = styled.ul`
-    color: ${({scrollNav}) => (scrollNav ? '#091D22' : '#091D22')};
+    color: ${({scrollNav}) => (scrollNav ? 'var(--dark)' : 'var(--dark)')};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,23 +102,22 @@ export const NavSocialItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: ${({scrollNav}) => (scrollNav ? '#091D22' : '#091D22')};
+    color: ${({scrollNav}) => (scrollNav ? 'var(--dark)' : 'var(--dark)')};
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
     height: 100%;
     cursor: pointer;
     transition: 0.4s all ease-in-out;
 
     &.active {
-        border-bottom: 1px solid #091d22;
+        border-bottom: 1px solid var(--dark);
     }
 
     &:hover {
-        color: ${({scrollNav}) => (scrollNav ? '#5ADEFF' : '#5ADEFF')};
-        border-color: ${({scrollNav}) => (scrollNav ? '#5ADEFF' : '#5ADEFF')};
+        color: ${({scrollNav}) => (scrollNav ? 'var(--primary)' : 'var(--primary)')};
+        border-color: ${({scrollNav}) => (scrollNav ? 'var(--primary)' : 'var(--primary)')};
     }
 `;  
 
@@ -126,7 +131,7 @@ export const NavSocialLinks = styled(LinkScroll)`
     transition: 0.4s all ease;
 
     &:hover {
-        color: ${({scrollNav}) => (scrollNav ? '#5ADEFF' : '#5ADEFF')};
+        color: ${({scrollNav}) => (scrollNav ? 'var(--primary)' : 'var(--primary)')};
     }
 
     @media screen and (max-width: 768px) {
